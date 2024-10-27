@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Muhammad Arif Marzuki</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+        }
+        
+        /* Gaya Umum */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #13e4e4;
+            padding: 10px 0;
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Tentang Saya */
+        #about {
+            text-align: center;
+        }
+        #about img {
+            width: 150px;
+            height: 148px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        /* Sosial Media */
+        .social-media {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, black, red, blue);
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .social-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Pengalaman */
+        .experience-item {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* Form Kontak */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        form label {
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+            #about img {
+                width: 120px;
+                height: 120px;
+            }
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="tentangsaya.html">Tentang Saya</a></li>
+                <li><a href="pengalaman.html">Pengalaman</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tentang Saya -->
+    <section id="about">
+        <h1>Muhammad Arif Marzuki</h1>
+        <p>Deskripsi singkat tentang diri Anda.</p>
+        <img src="fotoprofilwebsaya.jpg" alt="Foto Profil">
+
+        <!-- Sosial Media -->
+        <div class="social-media">
+            <a href="https://www.instagram.com/muhammadaarifmarzuki?igsh=MTRpejVnM2theXlrbA==" class="social-button">Instagram</a>
+            <a href="https://www.tiktok.com/@oom_kie?_t=8qs6RyVLjeR&_r=1" class="social-button">TikTok</a>
+            <a href="https://www.facebook.com/muhammad.arifmz.5?mibextid=LQQJ4d" class="social-button">Facebook</a>
+            <a href="https://youtube.com/@muhammadarifmarzuki?si=962ahRXF5_rrRGIt" class="social-button">YouTube</a>
+        </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="experience">
+        <h2>Perusahaan yang Dikelola</h2>
+        <div class="experience-item">
+            <h3>PT. TOKESOSMED PROVIDER INDONESIA</h3>
+            <h4>perusahaan penyedia jasa Sosial Media Marketing</h4>
+            <p>Klik tombol dibawah ini untuk mengunjungi website</p>
+            <a href="https://tokesosmed.id" class="social-button">Tokesosmed.id</a>
+       
+            
+            <h3>PT. BIJAKSANA TRANSPORT SOLUTION</h3>
+            <h4>perusaahan tour, travel & angkutan umum</h4>
+            <p>klik tombol dibawah ini untuk mengunjungi website</p>
+            <a href="https://tokesosmed.id" class="social-button">bijaksana transport</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Muhammad Arif Marzuki. Semua hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>
+
